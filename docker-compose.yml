@@ -1,0 +1,11 @@
+version: "2"
+services:
+  kallithea:
+    image: shukriadams/kallithea:latest
+    container_name: kallithea
+    restart: unless-stopped
+    ports:
+    - "3000:80"
+    volumes:
+      - ./repos:/opt/kallithea/repos/:rw
+      - ./config.ini:/opt/kallithea/config.ini
