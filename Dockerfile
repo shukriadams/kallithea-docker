@@ -5,9 +5,7 @@ RUN apt-get update \
     && apt-get install libpq-dev -y \
     && pip install --upgrade pip 
 
-# need RUN command to be split because chaining causes some of them to fail, test and optimize. I think the pip
-# commands failed if they are chained together, or with the apt-get block, presumably because something isn't finalized
-# in time.
+# cannot install pip packages in same run block as pip itself
 RUN pip install PasteScript \
     
     # required for postgres support
