@@ -1,4 +1,8 @@
-Kallithea container, ready for postgres. As for writing, Postgres 9.6.14 is confirmed working.
+# Kallithea container
+
+kallithea version 0.3.7 in a Docker container. Postgres-ready, Postgres 9.6.14 confirmed working.
+
+## Use
 
 1. Create a login on posgres for Kallithea (ensure login is enabled). 
 2. Create a database for Kallithea, make sure user has admin rights for it.
