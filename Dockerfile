@@ -9,13 +9,10 @@ RUN apt-get update \
 
 # cannot install pip packages in same run block as pip itself
 RUN pip install PasteScript \
-    
     # required for postgres support
     && pip install psycopg2 \
-    
     # for LDAP support
     && pip install python-ldap \
-    
     && pip install --trusted-host pypi.python.org kallithea==0.3.7 \
     && mkdir -p /opt/kallithea/data \
     && mkdir -p /opt/kallithea/repos

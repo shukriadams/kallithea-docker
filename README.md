@@ -1,6 +1,10 @@
 # Kallithea container
 
-kallithea version 0.3.7 in a Docker container. Postgres-ready, Postgres 9.6.14 confirmed working. Includes LDAP support.
+- kallithea version 0.3.7 in a Docker container. 
+- Postgres-ready, Postgres 9.6.14 confirmed working. 
+- Includes LDAP support.
+
+Docker Hub : https://hub.docker.com/r/shukriadams/kallithea
 
 ## Use
 
@@ -17,3 +21,10 @@ kallithea version 0.3.7 in a Docker container. Postgres-ready, Postgres 9.6.14 c
       docker-compose up -d
 
 7. The default admin user login is admin:admin.
+
+## Build 
+
+    docker build -t shukriadams/kallithea .
+
+(or use your own name here)
+
