@@ -1,6 +1,6 @@
 # Kallithea container
 
-kallithea version 0.3.7 in a Docker container. Postgres-ready, Postgres 9.6.14 confirmed working.
+kallithea version 0.3.7 in a Docker container. Postgres-ready, Postgres 9.6.14 confirmed working. Includes LDAP support.
 
 ## Use
 
