@@ -1,3 +1,5 @@
+# This is an example of a docker-compose file for setting your kallithea container up.
+
 version: "2"
 services:
   kallithea:
