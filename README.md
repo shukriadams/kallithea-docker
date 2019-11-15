@@ -8,7 +8,7 @@ Docker Hub : https://hub.docker.com/r/shukriadams/kallithea
 
 ## Use
 
-1. Create a login on posgres for Kallithea (ensure login is enabled). 
+1. Create a login on posgres for Kallithea (ensure login is enabled). This user needs superuser privileges.
 2. Create a database for Kallithea, make sure user has admin rights for it.
 3. Modift config.ini, be sure to set host, port, and connection string.
 4. Create a folder called "repos" in the same folder as docker-compose.yml
